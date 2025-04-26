@@ -5,13 +5,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-
 import java.math.BigDecimal;
 
-
-//@ToString
 @Entity(name = "product")
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,7 +19,6 @@ public class Product {
     private String description;
 
     private BigDecimal price;
-
 
     public Product() {
     }
